@@ -9,7 +9,7 @@ Function(BuildContext, String) _showAlertDialog = (context, message) {
     ),
     actions: <Widget>[CloseButton()],
   );
-  return showDialog(context: context, child: alert);
+  return showDialog(context: context, builder: (_) => alert);
 };
 
 get showAlertDialog {
