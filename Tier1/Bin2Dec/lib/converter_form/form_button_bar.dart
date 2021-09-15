@@ -37,11 +37,10 @@ class FormButtonBar extends StatelessWidget {
           buttonMinWidth: MediaQuery.of(context).size.width * 0.24,
           children: <Widget>[
             Container(
-              child: RaisedButton.icon(
+              child: ElevatedButton.icon(
                 onPressed: () => _pasteToBinary(context),
                 icon: Icon(Icons.content_paste),
                 label: Text('Paste'),
-                color: Theme.of(context).primaryColor,
               ),
             ),
             FormButton('0', _binaryController),

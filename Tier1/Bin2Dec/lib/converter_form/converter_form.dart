@@ -54,7 +54,7 @@ class ConverterForm extends StatelessWidget {
           SizedBox(height: MediaQuery.of(context).size.height * 0.02),
           FormButtonBar(_binaryController),
           SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-          RaisedButton(
+          ElevatedButton(
             child: Text('Convert!'),
             onPressed: () => _convert(_binaryController.text),
           ),
