@@ -13,7 +13,7 @@ class _ConverterHomeState extends State<ConverterHome> {
       appBar: AppBar(title: Text('Binary to Decimal Converter')),
       body: Builder(builder: (BuildContext context) {
         return Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(16.0),
           child: ConverterForm(),
         );
       }),
