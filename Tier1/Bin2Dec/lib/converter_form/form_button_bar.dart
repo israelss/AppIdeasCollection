@@ -33,15 +33,14 @@ class FormButtonBar extends StatelessWidget {
       children: <Widget>[
         Text('Enter a binary number:'),
         ButtonBar(
-          alignment: MainAxisAlignment.spaceEvenly,
+          alignment: MainAxisAlignment.center,
           buttonMinWidth: MediaQuery.of(context).size.width * 0.24,
           children: <Widget>[
             Container(
-              child: RaisedButton.icon(
+              child: OutlinedButton.icon(
                 onPressed: () => _pasteToBinary(context),
                 icon: Icon(Icons.content_paste),
                 label: Text('Paste'),
-                color: Theme.of(context).primaryColor,
               ),
             ),
             FormButton('0', _binaryController),
